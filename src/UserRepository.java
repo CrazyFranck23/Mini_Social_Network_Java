@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// Cette classe s'occupera de la persistance des objets User.
+
 public class UserRepository {
     private List<User> users = new ArrayList<>();
 
