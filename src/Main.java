@@ -4,15 +4,16 @@ public class Main {
         UserService userService = new UserService(userRepository);
 
         // Création d'utilisateurs
-        User user1 = new User(1, "Alice", "alice@example.com");
-        User user2 = new User(2, "Bob", "bob@example.com");
+        User user1 = new User(1, "Crazy", "crazy@gmail.com");
+        User user2 = new User(2, "Alionka", "alionka@outlook.com");
 
-        // Enregistrement des utilisateurs
+        // Enregistrement des utilisateurs dans la base de données
         userService.registerUser(user1);
         userService.registerUser(user2);
 
-        // Récupération d'un utilisateur
+        // Récupérer un utilisateur de la base de données
         User foundUser = userService.getUser(1);
-        System.out.println("Found user: " + foundUser);
+        System.out.println("Utilisateur trouvé : " + foundUser);
+
     }
 }
